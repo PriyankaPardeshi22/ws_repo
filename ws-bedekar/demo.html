@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="D:\ws-bedekar\bedekar\style.css"/>
+  <title>Navigation Bar</title>
+ 
+  <link rel="stylesheet" href="D:\ws-bedekar\bootstrap-5.3.3-dist (1)\bootstrap-5.3.3-dist\css">
+
+  <style>
+    /* Custom styles */
+    .navbar-custom {
+       background-color: #7C2929;
+     }
+     .navbar-toggler-icon {
+       background-color: white;
+     }
+     .navbar-eclipse {
+       width: 300px;
+       max-width: 292px;
+       height: 300px;
+       aspect-ratio: 292 / 259; /* Maintain the aspect ratio */
+       background-color: #7C2929;
+       border-radius: 50%;
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+       z-index: 2;
+       margin-top: 20px;
+     }
+     .ellipse-container1 {
+       position: relative;
+       z-index: 2;
+       text-align: center;
+     }
+     .image-container {
+       text-align: center;
+       padding: 1rem;
+     }
+     .image-container img {
+       width: 100%;
+       max-width: 250px;
+       height: auto;
+       margin-top: -150px;
+     }
+     .ellipse {
+       margin-top: -90px;
+      
+     }
+    
+     .centered {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       color: #ffffff;
+       font-size: 70px;
+       white-space: nowrap; /* Prevent the sentence from wrapping */
+       overflow: hidden; /* Hide any overflow text */
+       text-overflow: ellipsis;
+       font-family: "barrio";
+       margin-top:   -150px;
+     }
+     @media (max-width: 768px) {
+       .centered {
+         font-size: 40px; /* Adjust font size for smaller screens */
+         margin-top: -150px;
+       }
+       .navbar-eclipse {
+         width: 200px;
+         height: 200px;
+       }
+       .image-container img {
+         max-width: 200px;
+         margin-top: -100px;
+       }
+     }
+    
+    
+    
+    
+    @media (max-width : 1245px) {
+    
+     .ellipse {
+       margin-top: -500px;
+     }
+     
+    }
+    </style>
+    
+    
+  
+</head>
+<body>
+  <main id="nav">
+  <nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: 100px;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"  >
+            <a class="nav-link" style="font-size: 25px; margin-left: 300px;" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 25px; margin-left: 50px;" href="#">About Us</a>
+          </li>
+        </ul>
+        <div class="navbar-eclipse"></div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 25px; margin-right: 50px;"  href="#">Recipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 25px;  margin-right: 300px;" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</main>
+
+  <!-- Logo -->
+  <div class="container mt-5 ellipse-container1">
+    <div class="ellipse"></div>
+    <div class="image-container">
+      <img src="C:/Users/priyanka pardeshi/Downloads/Bedekar Logo3.png"  class="img-fluid" style="width: 230px; height: 250px; margin-top: -140px; margin-right: -5px;" alt="Responsive Image">
+    </div>
+  </div>
+
+ 
+
+
+  <script src="D:\ws-bedekar\bootstrap-5.3.3-dist (1)\bootstrap-5.3.3-dist\js"></script>
+</body>
+</html>
+
+ 
+ 
+ <!-- Carousel -->
+ <div id="carousel" class="carousel slide" style="margin-top: -130px;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="C:/Users/priyanka pardeshi/Downloads/7d64dc422d6a1b6c863e9f94b406b85f.avif" class="d-block w-100" alt="...">
+        <div class="centered">The Maharashtrian Street Food!</div>
+        
+      </div>
+      <div class="carousel-item">
+        <img src="C:/Users/priyanka pardeshi/Downloads/bhaji.jpg" class="d-block w-100" alt="...">
+        <div class="centered">The Maharashtrian Street Food!</div>
+      </div>
+      <div class="carousel-item">
+        <img src="C:/Users/priyanka pardeshi/Downloads/87bdd65db6859f2761212d49a2585101.avif" class="d-block w-100" alt="...">
+        <div class="centered">The Maharashtrian Street Food!</div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container position-relative">
+    <div class="top-right text-black label" style="margin-top: 30px;">The Indian Street Food</div>
+    <img src="C:\Users\priyanka pardeshi\Downloads\3dbb8c378b36289a9b2477e5a9f370ee82031c0e.webp" width="390" height="300" style="margin-top: 60px;">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
